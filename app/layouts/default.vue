@@ -28,7 +28,16 @@ const links = [[{
   onSelect: () => {
     open.value = false
   }
-}, {
+}, 
+{
+  label: 'Products',
+  icon: 'i-lucide-box',
+  to: '/products',
+  onSelect: () => {
+    open.value = false
+  }
+},
+{
   label: 'Settings',
   to: '/settings',
   icon: 'i-lucide-settings',
