@@ -7,13 +7,44 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck"
   },
   "dependencies": {
+    "@iconify-json/lucide": "^1.2.57",
+    "@iconify-json/simple-icons": "^1.2.43",
     "@nuxt/ui-pro": "^3.3.2",
+    "@unovis/ts": "^1.5.2",
+    "@unovis/vue": "^1.5.2",
+    "@vueuse/nuxt": "^13.5.0",
+    "date-fns": "^4.1.0",
     "nuxt": "^4.0.3",
     "vue": "^3.5.18",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "zod": "^3.25.76"
   },
-  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
+  "devDependencies": {
+    "@nuxt/eslint": "^1.5.2",
+    "eslint": "^9.31.0",
+    "typescript": "^5.8.3",
+    "vue-tsc": "^3.0.1"
+  },
+  "resolutions": {
+    "unimport": "4.1.1"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "maplibre-gl",
+      "vue-demi"
+    ],
+    "onlyBuiltDependencies": [
+      "@tailwindcss/oxide",
+      "unrs-resolver",
+      "vue-demi"
+    ]
+  },
+  "packageManager": "pnpm@10.13.1"
 }
